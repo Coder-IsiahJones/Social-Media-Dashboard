@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+
+<body>
+  <div class="box-background"></div>
+  <div class="container">
+    <header class="header">
+      <div class="left-header">
+        <h1 class="header-title">Social Media Dashboard</h1>
+        <span class="header-subtext">Total Followers: 23,004</span>
+      </div>
+
+      <!-- Toggle Mode -->
+      <div class="right-header toggle">
+        <label for="dark-mode" title="Dark mode toggle" class="toggle-label">Dark Mode</label>
+        <div class="toggle-btn-wrapper">
+          <input type="checkbox" name="dark-mode" class="toggle-checkbox" id="dark_mode">
+          <span class="toggle-btn"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top Cards -->
+    <section class="cards">
+      <!-- Facebook -->
+      <div class="card card-facebook">
+        <span class="social-media-tag">
+          <img class="social-tag-img" src="./images/icon-facebook.svg" alt="Facebook Logo">
+          @nathanf
+        </span>
+        <div class="followers">
+          <span class="count">1987</span>
+          <span class="subtext">Followers</span>
+        </div>
+        <span class="status">
+          <img src="./images/icon-up.svg" alt="Up Icon">
+          12 Today
+        </span>
+      </div>
+
+      <!-- Twitter -->
+      <div class="card card-twitter">
+        <span class="social-media-tag">
+          <img class="social-tag-img" src="./images/icon-twitter.svg" alt="Twitter Logo">
+          @nathanf
+        </span>
+        <div class="followers">
+          <span class="count">1044</span>
+          <span class="subtext">Followers</span>
+        </div>
+        <span class="status">
+          <img src="./images/icon-up.svg" alt="Up Icon">
+          99 Today
+        </span>
+      </div>
+
+      <!-- Instagram -->
+      <div class="card card-instagram">
+        <span class="social-media-tag">
+          <img class="social-tag-img" src="./images/icon-instagram.svg" alt="Instagram Logo">
+          @realnathanf
+        </span>
+        <div class="followers">
+          <span class="count">11k</span>
+          <span class="subtext">Followers</span>
+        </div>
+        <span class="status">
+          <img src="./images/icon-up.svg" alt="Up Icon">
+          1099 Today
+        </span>
+      </div>
+
+      <!-- YouTube -->
+      <div class="card card-youtube">
+        <span class="social-media-tag">
+          <img class="social-tag-img" src="./images/icon-youtube.svg" alt="YouTube Logo">
+          Nathan F.
+        </span>
+        <div class="followers">
+          <span class="count">8239</span>
+          <span class="subtext">Followers</span>
+        </div>
+        <span class="status negative-change">
+          <img src="./images/icon-down.svg" alt="Down Icon">
+          144 Today
+        </span>
+      </div>
+    </section>
+
+    <!-- Bottom Cards -->
+    <section class="bottom-cards">
+      <h2 class="bottom-title">
+        Overview - Today
+      </h2>
+
+      <div class="cards">
+        <!-- Page Views -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Page views
+            </span>
+            <span class="card-bottom-value">
+              87
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-facebook.svg" alt="Facebook Logo">
+            </span>
+            <span class="card-bottom-stat stat-positive">
+              <img src="./images/icon-up.svg" alt="Icon up">
+              3%
+            </span>
+          </div>
+        </div>
+
+        <!-- Facebook Likes -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Likes
+            </span>
+            <span class="card-bottom-value">
+              52
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-facebook.svg" alt="Facebook Logo">
+            </span>
+            <span class="card-bottom-stat stat-negative">
+              <img src="./images/icon-down.svg" alt="Icon down">
+              2%
+            </span>
+          </div>
+        </div>
+
+        <!-- Instagram Likes -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Likes
+            </span>
+            <span class="card-bottom-value">
+              5462
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-instagram.svg" alt="Instagram Logo">
+            </span>
+            <span class="card-bottom-stat stat-positive">
+              <img src="./images/icon-up.svg" alt="Icon up">
+              2257%
+            </span>
+          </div>
+        </div>
+
+        <!-- Instagram Views -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Profile Views
+            </span>
+            <span class="card-bottom-value">
+              52k
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-instagram.svg" alt="Instagram Logo">
+            </span>
+            <span class="card-bottom-stat stat-positive">
+              <img src="./images/icon-up.svg" alt="Icon up">
+              1375%
+            </span>
+          </div>
+        </div>
+
+        <!-- Twitter Retweets -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Retweets
+            </span>
+            <span class="card-bottom-value">
+              117
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-twitter.svg" alt="Twitter Logo">
+            </span>
+            <span class="card-bottom-stat stat-positive">
+              <img src="./images/icon-up.svg" alt="Icon up">
+              303%
+            </span>
+          </div>
+        </div>
+
+        <!-- Twitter Likes -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Likes
+            </span>
+            <span class="card-bottom-value">
+              507
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-twitter.svg" alt="Twitter Logo">
+            </span>
+            <span class="card-bottom-stat stat-positive">
+              <img src="./images/icon-up.svg" alt="Icon up">
+              553%
+            </span>
+          </div>
+        </div>
+
+        <!-- YouTube Likes -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Likes
+            </span>
+            <span class="card-bottom-value">
+              107
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-youtube.svg" alt="YouTube Logo">
+            </span>
+            <span class="card-bottom-stat stat-negative">
+              <img src="./images/icon-down.svg" alt="Icon down">
+              19%
+            </span>
+          </div>
+        </div>
+
+        <!-- YouTube Likes -->
+        <div class="card card-columns">
+          <div class="card_column">
+            <span class="card-bottom-subtitle">
+              Total Views
+            </span>
+            <span class="card-bottom-value">
+              1407
+            </span>
+          </div>
+          <div class="card_column">
+            <span class="card-bottom-img">
+              <img src="./images/icon-youtube.svg" alt="YouTube Logo">
+            </span>
+            <span class="card-bottom-stat stat-negative">
+              <img src="./images/icon-down.svg" alt="Icon down">
+              12%
+            </span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  </div>
+
+  <!-- Credits -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="http://coder-isiah-projects.42web.io/Portfolio/">Isiah Jones</a>.
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('dark_mode');
+    const body = document.getElementsByTagName("body")[0];
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('light');
+    });
+  </script>
+
+</body>
+
+</html>
